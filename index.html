@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b2b9ab5ba1.js" crossorigin="anonymous"></script>
+    <style>
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .social-icons {
+            display: inline-block;
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-around;
+            /* Add space around items */
+            align-items: center;
+            /* Vertically center items */
+            /* Add additional styling if needed */
+        }
+
+        .list-unstyled.social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            display: flex;
+        }
+
+        .list-unstyled.social-icons li {
+            margin: 0 10px;
+            height: 20px;
+            /* Adjust the spacing between social icons */
+        }
+
+        /* Add space between icons */
+
+
+        .quicklinks li {
+            margin: 5px;
+            opacity: 0.7;
+            transition: all 0.2ms;
+        }
+
+        .quicklinks li:hover {
+            opacity: 1;
+            font-weight: 500;
+
+        }
+
+        .phone {
+            color: #ff5a2c;
+            font-family: Poppins Helvetica, sans-serif;
+            font-size: 13px;
+            display: block;
+            margin-top: 4px;
+        }
+
+        footer p {
+
+            font-size: 18px;
+        }
+
+        .address {
+            font-size: 16px;
+            padding-left: 7px;
+        }
+
+        .logo {
+            height: 80px;
+            width: fit-content;
+        }
+
+        footer h5 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex" style="gap: 10px;align-items: center;color: #fff;">
+                <div style="background-color: red; display: inline-block;">
+                    <img src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693834673/SVEC_logo-removebg-preview_i8gu7p.jpg" alt="Your Image" height="50" width="50">
+                </div>
+
+                <div>
+                    <div class="clg-title">Sri Vasavi Engineering College</div>
+
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="flex-grow: 0;" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #fff;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="fixed-class">
+        <div class="container fixed-main-image">
+        </div>
+    </div>
+    <div class="content">
+        <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center p-3">A Purposeful College</h1>
+                    </div>
+                    <div class="col-sm-6 col-12 col-md-3 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://cdn.rcee.ac.in/static/www/img/home/accreditations/aicte.png" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">AICTE</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://cdn.rcee.ac.in/static/www/img/home/accreditations/jntuk.png" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">JNTUK</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="	https://cdn.rcee.ac.in/static/www/img/home/accreditations/nba.png" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">NBA</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://cdn.rcee.ac.in/static/www/img/home/accreditations/naac.png" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">NAAC A+</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="placement-content">
+            <h1>Placement Stats</h1>
+        </div>
+        <div class="empty">
+        </div>
+        <div class="placement-content-1">
+            <div class="stats">
+                <p>600+</p>
+                <p>Placements</p>
+                <p>2021</p>
+            </div>
+            <div class="stats">
+                <p>900+</p>
+                <p>Placements</p>
+                <p>2022</p>
+            </div>
+            <div class="stats">
+                <p>690+</p>
+                <p>Placements</p>
+                <p>2023</p>
+            </div>
+        </div>
+        <div class="empty-1">
+        </div>
+        <div class="wcu-section pt-5 pb-5" id="wcuSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="wcu-section-heading text-center">Courses Offered</h1>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" wcu-card-image bi bi-laptop" viewBox="0 0 16 16">
+                                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                            </svg>
+                            <h1 class="wcu-card-title mt-3">Computer Science Engineering</h1>
+                            <p class="wcu-card-description">
+                                Experience fine dining at the comfort of your home. All our
+                                orders are carefully packed and arranged to give you the nothing
+                                less than perfect.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-broadcast-pin wcu-card-image" viewBox="0 0 16 16">
+                                <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z" />
+                            </svg>
+                            <h1 class="wcu-card-title mt-3">Electronic Communication Engineering</h1>
+                            <p class="wcu-card-description">
+                                The Fresh Food group provides fresh-cut fruits and vegetables
+                                directly picked from our partner farms and farm houses so that
+                                you always get them tree to plate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="wcu-card-image bi bi-gear-wide-connected" viewBox="0 0 16 16">
+                                <path d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
+                            </svg>
+                            <h1 class="wcu-card-title mt-3">Mechanical Engineering</h1>
+                            <p class="wcu-card-description">
+                                Food Coupons &amp; Offers upto
+                                <span class="offers">50% OFF</span>
+                                and Exclusive Promo Codes on All Online Food Orders.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" wcu-card-image bi bi-laptop" viewBox="0 0 16 16">
+                                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                            </svg>
+                            <h1 class="wcu-card-title mt-3">Computer Science Engineering</h1>
+                            <p class="wcu-card-description">
+                                Experience fine dining at the comfort of your home. All our
+                                orders are carefully packed and arranged to give you the nothing
+                                less than perfect.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-broadcast-pin wcu-card-image" viewBox="0 0 16 16">
+                                <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z" />
+                            </svg>
+                            <h1 class="wcu-card-title mt-3">Electronic Communication Engineering</h1>
+                            <p class="wcu-card-description">
+                                The Fresh Food group provides fresh-cut fruits and vegetables
+                                directly picked from our partner farms and farm houses so that
+                                you always get them tree to plate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="wcu-card-image bi bi-gear-wide-connected" viewBox="0 0 16 16">
+                                <path d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
+                            </svg>
+                            <h1 class="wcu-card-title mt-3">Mechanical Engineering</h1>
+                            <p class="wcu-card-description">
+                                Food Coupons &amp; Offers upto
+                                <span class="offers">50% OFF</span>
+                                and Exclusive Promo Codes on All Online Food Orders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimony">
+                <p class="wcu-section-heading">Testimony By Almuni</p>
+            </div>
+            <hr />
+            <div class="college-stats">
+                <div class="stats">
+                    <p>500+</p>
+                    <p>Faculty</p>
+                </div>
+                <div class="stats">
+                    <p>5000+</p>
+                    <p>Students</p>
+                </div>
+                <div class="stats">
+                    <p>20+</p>
+                    <p>Experience</p>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 ">
+                    <img class="logo" src="vasavisvec_logo-removebg.png" alt="">
+                    <p style="font-size: 16px;opacity: 0.8;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at,
+                        accusamus
+                        dolores quas praesentium
+                        voluptatum odio quo dolorem, commodi possimus maxime voluptatibus eius atque placeat optio reprehenderit
+                        nihil. Asperiores, delectus.</p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled quicklinks">
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="#">Contact US</a></li>
+                        <li><a href="#">Hostels</a></li>
+                        <li><a href="#">Sports <br>Facililties</a></li>
+                        <li><a href="#">Transport</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled quicklinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5>Connect with Us</h5>
+                    <ul class="list-unstyled social-icons">
+                        <li><a href="#"><i class="fab fa-facebook" style="font-size: 24px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter" style="font-size: 24px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram" style="font-size: 24px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin" style="font-size: 24px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube" style="font-size: 24px;"></i></a></li>
+                    </ul>
+
+                    <h5>Contact Us</h5>
+
+                    <p class="address">
+                        Sri Vasavi Engineering College <br> Pedatadepalli,Tadepalligudem <br>534 101 West Godavari Dist., <br>Andhra
+                        Pradesh.
+
+                        <span class="phone">+91-8818284322 (9:30 AM-4:30 PM)</span>
+                        <span class="phone">principal@srivasaviengg.ac.in
+                        </span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center;opacity: 0.7;">Powered by <a href="#" style="font-weight: 700;margin-right:5px;margin-left:5px;">
+                <span style="color:#4285F4 ;">G</span>
+                <span style="color:#34A853 ;">D</span>
+                <span style="color:#FBBC05 ;">S</span>
+                <span style="color: #EA4335; margin-right:5px;">C </span>Web Devs</a></p>
+        <p style="text-align: center;opacity: 0.7;">Copyright © 2023 Sri Vasavi Engineering College. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b2b9ab5ba1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
