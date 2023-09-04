@@ -1,0 +1,58 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header {
+    background-color: #B1040E;
+    position:fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.t1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.t2{
+    color: #fff;
+    font-size: 20px;
+}
+.logodiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.logodiv div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 20px;
+
+}
+.hero{
+    background: url("/contactbg.jpg");
+}
