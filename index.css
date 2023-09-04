@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.fixed-main-image {
+    height: 600px;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+}
+
+.content {
+    width: 100%;
+    padding: 10px;
+}
+
+.clg-logo-navbar {
+    background-color: red;
+}
+
+.menu-item-link {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.menu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: BOLD;
+    margin-top: 24px;
+    text-align: center;
+
+}
+
+.menu-item-card {
+    height: 300px;
+    border-radius: 16px;
+}
+
+.placement-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.placement-content-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.empty {
+    height: 100px;
+    width: 100px;
+}
+
+.empty-1 {
+    height: 80px;
+    width: 100px;
+}
+
+.stats {
+    text-align: center;
+}
+
+.wcu-card-image {
+    width: 87px;
+    height: 90px;
+    text-align: center;
+}
+
+.wcu-card {
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.wcu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.wcu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.testimony {
+    background-color: grey;
+    height: 170px;
+    text-align: center;
+}
+
+.college-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:0px) and (max-width:575px) {
+    .fixed-main-image {
+        height: 200px;
+    }
+
+    .menu-item-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-item-image {
+        height: 210px;
+        width: 70px;
+    }
+
+    .clg-title {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .menu-item-image {
+        height: 210px;
+        width: 80px;
+    }
+
+    .fixed-main-image {
+        height: 400px;
+    }
+}
