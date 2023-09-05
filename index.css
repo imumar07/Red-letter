@@ -3,14 +3,27 @@
 .fixed-main-image {
     width: 100%;
     min-height: 100vh;
-    background-position:center ;
     background-size: cover;
+    background-position: top;
     position: relative;
     background-attachment: fixed;
-    background-image: url('https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+    background-image: url('CollegeBuilding.JPG');
+    
     
 }
-
+.shadow-layer{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 250PX;
+    text-align: center;
+}
 .content {
     width: 100%;
     padding: 10px;
