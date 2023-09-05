@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 .fixed-main-image {
-    height: 600px;
+    height: 100vh;
     background-size: cover;
+    box-sizing: border-box;
     background-image: url('https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
 }
 
@@ -25,7 +26,7 @@
 .menu-card-title {
     color: #323f4b;
     font-family: "Roboto";
-    font-size: 12px;
+    font-size: 20px;
     font-weight: BOLD;
     margin-top: 24px;
     text-align: center;
@@ -129,8 +130,8 @@
     }
 
     .menu-item-image {
-        height: 210px;
-        width: 70px;
+        height: 100px;
+        width: 100px;
     }
 
     .clg-title {
@@ -138,10 +139,16 @@
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px),
+(min-width :768px) {
     .menu-item-image {
-        height: 210px;
-        width: 80px;
+        height: 150px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .menu-item-card {
+        text-align: center;
     }
 
     .fixed-main-image {
