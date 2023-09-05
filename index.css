@@ -186,9 +186,75 @@ body {
     width: 70px;
 }
 
+.nav-elements-large {
+    display: none;
+}
+
+/*company logos css*/
+/* Company Scroll Bar CSS starts here. */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.company-logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.company-logos:before,
+.company-logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.company-logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.company-logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.company-logos-slide {
+    display: inline-block;
+    animation: 50s slide infinite linear;
+}
+
+.company-logos-slide img {
+    height: 50px;
+    margin: 0 50px;
+}
+
+/* Comapny SCroll Bar CSS ends here. */
+@media not screen and (min-width:0px) and (max-width:992px) {
+    .nav-elements-large {
+        display: block;
+    }
+
+    .nav-elements-small {
+        display: none;
+    }
+}
+
 @media screen and (min-width:0px) and (max-width:575px) {
     .title-small {
         display: block;
+        font-size: 50px;
     }
 
     .title-span {
@@ -196,7 +262,7 @@ body {
     }
 
     .clg-title-navbar {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .clg-title {
@@ -225,6 +291,10 @@ body {
 
     .clg-title {
         font-size: 10px;
+    }
+
+    .nav-elements-large {
+        display: none !important;
     }
 }
 
