@@ -155,8 +155,7 @@ body {
 }
 
 .testimony {
-    background-color: grey;
-    height: 170px;
+    background-color: #f5f5f5;
     text-align: center;
 }
 
@@ -252,11 +251,21 @@ body {
         display: none !important;
     }
 }
+<<<<<<< HEAD
 @media  screen and (min-width:0px) and (max-width:991px) {
     .nav-elements-large{
         display: none !important;
     }
     .nav-elements-small{
+=======
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    .nav-elements-large {
+        display: none !important;
+    }
+
+    .nav-elements-small {
+>>>>>>> ca13868b140d14e31142e994e9f506ee6035a114
         display: block !important;
     }
 }
@@ -304,6 +313,10 @@ body {
     }
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca13868b140d14e31142e994e9f506ee6035a114
 @media screen and (min-width: 576px) and (max-width: 768px),
 (min-width :768px) {
     .menu-item-image {
