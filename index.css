@@ -252,11 +252,13 @@ body {
         display: none !important;
     }
 }
-@media  screen and (min-width:0px) and (max-width:991px) {
-    .nav-elements-large{
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    .nav-elements-large {
         display: none !important;
     }
-    .nav-elements-small{
+
+    .nav-elements-small {
         display: block !important;
     }
 }
@@ -304,6 +306,7 @@ body {
     }
 
 }
+
 @media screen and (min-width: 576px) and (max-width: 768px),
 (min-width :768px) {
     .menu-item-image {
