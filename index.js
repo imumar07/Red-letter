@@ -55,3 +55,41 @@ const observer_2 = new IntersectionObserver((entries) => {
 
 observer_1.observe(statisticsSection);
 observer_2.observe(lastStats);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.querySelector('.navbar');
+    const navbar2 = document.querySelector('.navbar-expand-lg');
+    const showDiv = document.querySelector('.placement-content');
+    navbar.style.backgroundColor = 'transparent';
+    navbar2.style.backgroundColor = 'transparent';
+    // rgba(0, 0, 0, 0.6)
+
+    let hasVisitedShowDiv = false;
+
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function updateNavbarBackground() {
+        if (!hasVisitedShowDiv && isInViewport(showDiv)) {
+            navbar.style.backgroundColor = '#b1040e'; 
+            hasVisitedShowDiv = true; 
+        }
+    }
+
+    updateNavbarBackground();
+    window.addEventListener('scroll', updateNavbarBackground);
+});
+
+
+
+
+

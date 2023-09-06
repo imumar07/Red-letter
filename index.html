@@ -109,60 +109,80 @@
             color: #FF0000;
             /* YouTube red */
         }
+    
+        
+        .branch-card:hover {
+            .wcu-card-title{
+                color: white !important; 
+            }
+            .program-button{
+                background-color: white!important;
+                color: #b1040e;
+            }
+            transform: scale(1.04);
+            background-color: #b1040e;
+            color: white !important;
+            background-position: left;
+        }
+
+        .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        .navbar-toggler{
+            color: white;
+            border: solid white 1px;
+        }
     </style>
 </head>
 
 
 <body>
-    <div class="nav-elements-large">
-        <nav class="navbar navbar-expand-lg bg-color fixed-top nav-elements-large ">
-            <div class="container-fluid">
-                <div class="navbar-brand d-flex" style="gap: 10px;align-items: center;color: #fff;">
-                    <img src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png" alt="Your Image" height="50" width="50">
-                    <div>
-                        <h1 class="clg-title-navbar">SRI VASAVI <span class="title-span">ENGINEERING COLLEGE</span></h1>
-                        <h1 class="title-small clg-title-navbar">ENGINEERING COLLEGE</h1>
+    <nav class="navbar navbar-expand-lg bg-color fixed-top nav-elements-large ">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex" style="gap: 10px;align-items: center;color: #fff;">
+                <img src="https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693810335/SVEC_logo_dyjxrl.png" alt="Your Image" height="50" width="50">
+                <div>
+                    <h1 class="clg-title-navbar">SRI VASAVI <span class="title-span">ENGINEERING COLLEGE</span></h1>
+                    <h1 class="title-small clg-title-navbar">ENGINEERING COLLEGE</h1>
 
-                    </div>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse " style="flex-grow: 0;" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" style="color: #fff;">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: #fff;">Administration</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: #fff;">Departments</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: #fff;">Campus life</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: #fff;">Placements</a>
-                        </li>
-                        <li class="nav-item dropdown d-none">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </nav>
-    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon border-bg-white"></span>
+            </button>
+            <div class="collapse navbar-collapse " style="flex-grow: 0;" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #fff;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;">Administration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;">Campus life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;">Placements</a>
+                    </li>
+                    <li class="nav-item dropdown d-none">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <nav class="navbar navbar-expand-lg bg-color nav-elements-small fixed-top">
         <div class="container-fluid">
             <div class="navbar-brand d-flex" style="align-items: center;color: #fff;">
@@ -188,10 +208,10 @@
                             </div>
                             <div class="col-6 " style="border: 1px solid #b1040e;">
                                 <li class="nav-item p-1">
-                                    <a class="nav-link active" aria-current="page" href="#" style="ccolor: #000000;">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#" style="color: #000000;">Home</a>
                                 </li>
                             </div>
-                            <div class="shadow  col-6" style="border: 1px solid #b1040e">
+                            <div class="col-6" style="border: 1px solid #b1040e">
                                 <li class="nav-item p-1">
                                     <a class="nav-link" href="#" style="color: #000000;">Administration</a>
                                 </li>
@@ -231,7 +251,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid fixed-main-image w-100 p-0">
+    <div class="container-fluid  fixed-main-image w-100 p-0">
         <div class="shadow-layer p-0">
             <h1 class="clg-title">SRI VASAVI ENGINEERING COLLEGE</h1>
         </div>
@@ -325,7 +345,7 @@
                         <h1 class="wcu-section-heading text-center">Courses Offered</h1>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow  wcu-card p-3 mb-3 h-100 pt-4">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100 pt-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" wcu-card-image bi bi-laptop" viewBox="0 0 16 16">
                                 <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
                             </svg>
@@ -337,7 +357,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow  wcu-card p-3 mb-3 h-100">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" wcu-card-image bi bi-laptop" viewBox="0 0 16 16">
                                 <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
                             </svg>
@@ -349,7 +369,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow  wcu-card p-3 mb-3 h-100">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" wcu-card-image bi bi-laptop" viewBox="0 0 16 16">
                                 <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
                             </svg>
@@ -361,7 +381,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow  wcu-card p-3 mb-3 h-100 pt-4">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100 pt-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" wcu-card-image bi bi-laptop" viewBox="0 0 16 16">
                                 <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
                             </svg>
@@ -372,7 +392,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow wcu-card p-3 mb-3 h-100 ">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100 ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-broadcast-pin wcu-card-image" viewBox="0 0 16 16">
                                 <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z" />
                             </svg>
@@ -384,7 +404,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow wcu-card p-3 mb-3 h-100 ">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100 ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-broadcast-pin wcu-card-image" viewBox="0 0 16 16">
                                 <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z" />
                             </svg>
@@ -395,7 +415,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow wcu-card p-3 mb-3 h-100">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="wcu-card-image bi bi-lightbulb" viewBox="0 0 16 16">
                                 <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
                             </svg>
@@ -407,7 +427,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow wcu-card p-3 mb-3 h-100">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="wcu-card-image bi bi-gear-wide-connected" viewBox="0 0 16 16">
                                 <path d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
                             </svg>
@@ -419,7 +439,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3">
-                        <div class="shadow wcu-card pt-4 mb-3 h-100">
+                        <div class="shadow branch-card wcu-card pt-4 mb-3 h-100">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="wcu-card-image bi bi-building" viewBox="0 0 16 16">
                                 <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
                                 <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
@@ -432,7 +452,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-2 mb-3 master-card w-100">
-                        <div class="shadow wcu-card p-3 mb-3 h-100">
+                        <div class="shadow branch-card wcu-card p-3 mb-3 h-100">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="wcu-card-image bi bi-mortarboard" viewBox="0 0 16 16">
                                 <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
                                 <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
@@ -534,7 +554,7 @@
           
     </footer>
 
-
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/b2b9ab5ba1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

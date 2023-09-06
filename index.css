@@ -190,7 +190,7 @@ body {
     display: none;
 }
 
-/*company logos css*/
+/* company logos css */
 /* Company Scroll Bar CSS starts here. */
 @keyframes slide {
     from {
@@ -241,13 +241,23 @@ body {
 }
 
 /* Comapny SCroll Bar CSS ends here. */
+
+
 @media not screen and (min-width:0px) and (max-width:991px) {
     .nav-elements-large {
-        display: block;
+        display: block !important;
     }
 
     .nav-elements-small {
-        display: none;
+        display: none !important;
+    }
+}
+@media  screen and (min-width:0px) and (max-width:991px) {
+    .nav-elements-large{
+        display: none !important;
+    }
+    .nav-elements-small{
+        display: block !important;
     }
 }
 
@@ -293,13 +303,7 @@ body {
         font-size: 10px;
     }
 
-    .nav-elements-large {
-        display: none !important;
-    }
 }
-
-
-
 @media screen and (min-width: 576px) and (max-width: 768px),
 (min-width :768px) {
     .menu-item-image {
