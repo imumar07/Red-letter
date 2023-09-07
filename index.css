@@ -21,8 +21,6 @@ body {
     position: relative;
     background-attachment: fixed;
     background-image: url('https://res.cloudinary.com/dqe4ld4cx/image/upload/v1693834930/CollegeBuilding_eh7qjr.jpg');
-
-
 }
 
 .second-navbar {
@@ -30,7 +28,28 @@ body {
     height: 30px;
     width: 100%;
 }
+.second-navbar-large{
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+    
+}
+.second-navbar-large-contents{
+    text-decoration: none !important;
+}
+/*second-large-navbar*/
+.second2-navbar-large {
+    background-color: transparent;
+    width: 100%;
+    border: 2 solid yellow;
+}
 
+.second2-navbar-large-contents {
+    border: 2 solid red;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
 .shadow-layer {
     width: 100%;
     height: 100%;
@@ -155,7 +174,8 @@ body {
 }
 
 .testimony {
-    background-color: #f5f5f5;
+    background-color: grey;
+    height: 170px;
     text-align: center;
 }
 
@@ -250,6 +270,12 @@ body {
     .nav-elements-small {
         display: none !important;
     }
+    .small-navbar-menu-navbar{
+        display: none ;
+    }
+    #second-large-navbar{
+        display: block !important;
+    }
 }
 
 @media screen and (min-width:0px) and (max-width:991px) {
@@ -259,6 +285,12 @@ body {
 
     .nav-elements-small {
         display: block !important;
+    }
+    .small-navbar-menu-navbar{
+        display: block ;
+    }
+    #second-large-navbar{
+        display: none !important;
     }
 }
 
@@ -323,3 +355,83 @@ body {
         background-position: center;
     }
 }
+/*Small custom navbar*/
+.small-navbar {
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #b1040e;
+}
+
+i {
+    align-self: center;
+}
+.small-navbar-logo-image{
+    height: 50px;
+    width: 50px;
+}
+.small-navbar-nav-button {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.small-navbar-center-text {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.small-navbar-logo-image{
+    height: 50px;
+    width: 50px;
+}
+
+.small-navbar-menu-items {
+    padding-left: 10px;
+    color: #12022f95;
+    font-size: 14px;
+}
+
+.small-navbar-menu-button {
+    margin: 10px;
+    background-color: #ffdda9;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    color: #12022f;
+    font-weight: bold;
+    border-style: none;
+    padding: 5px;
+}
+
+.small-navbar-menu-navbar {
+    display: none;
+}
+.small-navbar-last-div-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.small-navbar-items-last-div-element{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.small-navbar-items-last-div-anchor{
+    color: #12022f;
+    text-decoration: none;
+}
+@media (min-width:768px){
+    .nav-elements-small{
+        display: none;
+    }
+}
+/*Small Navbar media query*/
+
+
+/*Small custom navbar Ends*/

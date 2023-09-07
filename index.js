@@ -55,3 +55,23 @@ const observer_2 = new IntersectionObserver((entries) => {
 
 observer_1.observe(statisticsSection);
 observer_2.observe(lastStats);
+//Small Navbar js
+let button = document.getElementById("button");
+let flag = 0;
+let icon = document.getElementById("changeItem");
+let menu = document.getElementById("menuItems");
+button.addEventListener("click", function() {
+    if (flag === 0) {
+        icon.classList.remove("fa-solid", "fa-bars");
+        icon.classList.add("fa-solid", "fa-xmark");
+        menu.classList.toggle("small-navbar-menu-navbar");
+        flag = 1;
+    } else {
+        icon.classList.remove("fa-solid", "fa-xmark");
+        icon.classList.add("fa-solid", "fa-bars");
+        menu.classList.toggle("small-navbar-menu-navbar");
+        flag = 0;
+    }
+});
+
+//Small Navbar js ends
