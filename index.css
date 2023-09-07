@@ -110,7 +110,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 10px;
     width: 100%;
     text-align: center;
@@ -127,7 +127,9 @@ body {
 }
 
 .count-increase {
-    font-size: 25px;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    color:#b1040e ;
 }
 
 .empty {
@@ -175,7 +177,7 @@ body {
 
 .testimony {
     background-color: grey;
-    height: 170px;
+    /* height: 170px; */
     text-align: center;
 }
 
@@ -209,7 +211,7 @@ body {
     display: none;
 }
 
-/*company logos css*/
+/* company logos css */
 /* Company Scroll Bar CSS starts here. */
 @keyframes slide {
     from {
@@ -337,7 +339,6 @@ body {
     }
 
 }
-
 @media screen and (min-width: 576px) and (max-width: 768px),
 (min-width :768px) {
     .menu-item-image {
@@ -435,3 +436,89 @@ i {
 
 
 /*Small custom navbar Ends*/
+
+@media screen and (min-width: 576px) and (max-width: 768px),
+(min-width :768px) {
+    .menu-item-image {
+        height: 150px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .menu-item-card {
+        text-align: center;
+    }
+
+    .fixed-main-image {
+        height: 300px;
+        background-position: center;
+    }
+}
+
+/* colour animation for course offered */
+.branch-card:hover {
+    .wcu-card-title{
+        color: white !important; 
+    }
+    .program-button{
+        background-color: white!important;
+        color: #b1040e;
+    }
+    transform: scale(1.04);
+    background-color: #b1040e;
+    color: white !important;
+    background-position: left;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    color: white;
+    border: solid white 1px;
+}
+
+
+/* animatin */
+.menu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: BOLD;
+    margin-top: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-item-card {
+    height: 300px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #0000ff88;
+    z-index: 1;
+    transition: height 1s ease;
+}
+
+.menu-item-card:hover::before {
+    height: 43%;
+}
+
+.menu-item-card:hover .menu-item-image{
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+.menu-item-card:hover .menu-card-title{
+    color: #fff;
+}
