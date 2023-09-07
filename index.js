@@ -67,7 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav2text4 = document.getElementById("nav-bar2-text4");
     const nav2text5= document.getElementById("nav-bar2-text5");
     const nav2text6= document.getElementById("nav-bar2-text6");
-
+    const nav2text7= document.getElementById("nav-bar2-text7");
+    const nav2text8= document.getElementById("nav-bar2-text8");
     const showDiv = document.querySelector('.placement-content');
     navbar.style.backgroundColor = 'transparent';
     navbar2.style.backgroundColor = 'transparent';
@@ -96,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
             nav2text4.style.color="black";
             nav2text5.style.color="black";
             nav2text6.style.color="black";
+            nav2text7.style.color="black";
+            nav2text8.style.color="black";
             hasVisitedShowDiv = false; 
         }
     }
@@ -104,7 +107,26 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', updateNavbarBackground);
 });
 
+//Small Navbar js
+let button = document.getElementById("button");
+let flag = 0;
+let icon = document.getElementById("changeItem");
+let menu = document.getElementById("menuItems");
+button.addEventListener("click", function() {
+    if (flag === 0) {
+        icon.classList.remove("fa-solid", "fa-bars");
+        icon.classList.add("fa-solid", "fa-xmark");
+        menu.classList.toggle("small-navbar-menu-navbar");
+        flag = 1;
+    } else {
+        icon.classList.remove("fa-solid", "fa-xmark");
+        icon.classList.add("fa-solid", "fa-bars");
+        menu.classList.toggle("small-navbar-menu-navbar");
+        flag = 0;
+    }
+});
 
+//Small Navbar js ends
 
 //code for top button
 
