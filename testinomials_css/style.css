@@ -8,7 +8,6 @@
   font-family: "Poppins", sans-serif;
 }
 .containertest {
-  height: 500px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -93,4 +92,15 @@
   .nav-btn {
     display: none;
   }
+}
+
+
+.testi-title{
+  background-color: white;
+}
+
+ .testi-title{
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  background-color: #f3f6fb;
 }

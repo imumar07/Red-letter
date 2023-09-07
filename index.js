@@ -60,6 +60,14 @@ observer_2.observe(lastStats);
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     const navbar2 = document.querySelector('.navbar-expand-lg');
+    const navbar2ndLarge = document.querySelector('#second-large-navbar');
+    const nav2text = document.getElementById("nav-bar2-text");
+    const nav2text2 = document.getElementById("nav-bar2-text2");
+    const nav2text3= document.getElementById("nav-bar2-text3");
+    const nav2text4 = document.getElementById("nav-bar2-text4");
+    const nav2text5= document.getElementById("nav-bar2-text5");
+    const nav2text6= document.getElementById("nav-bar2-text6");
+
     const showDiv = document.querySelector('.placement-content');
     navbar.style.backgroundColor = 'transparent';
     navbar2.style.backgroundColor = 'transparent';
@@ -81,13 +89,43 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateNavbarBackground() {
         if (!hasVisitedShowDiv && isInViewport(showDiv)) {
             navbar.style.backgroundColor = '#b1040e'; 
-            hasVisitedShowDiv = true; 
+            navbar2ndLarge.style.backgroundColor='white';
+            nav2text.style.color="black";
+            nav2text2.style.color="black";
+            nav2text3.style.color="black";
+            nav2text4.style.color="black";
+            nav2text5.style.color="black";
+            nav2text6.style.color="black";
+            hasVisitedShowDiv = false; 
         }
     }
 
     updateNavbarBackground();
     window.addEventListener('scroll', updateNavbarBackground);
 });
+
+
+
+//code for top button
+
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
 
