@@ -526,6 +526,7 @@ i {
     background-color: transparent;
     border: 2px solid #ffffff88;
     border-radius: 5px;
+    height: fit-content;
     padding: 6px;
     color:#ffffff90;
     height: fit-content;
