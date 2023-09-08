@@ -531,9 +531,9 @@ i {
     background-color: transparent;
     border: 2px solid #ffffff88;
     border-radius: 5px;
-    padding: 6px;
-    color:#ffffff90;
     height: fit-content;
+    padding: 6px;
+    color: #ffffff90;
 }
 .small-navbar-center-text {
     color: #ffffff;
