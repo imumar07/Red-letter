@@ -85,7 +85,9 @@ body {
 .clg-logo-navbar {
     background-color: red;
 }
-
+.dept-dropdown-items{
+    font-size: 13px;
+}
 .menu-item-link {
     color: #d0b200;
     font-family: "Roboto";
@@ -212,6 +214,137 @@ body {
 .nav-elements-large {
     display: none;
 }
+/* style for footer start from here */
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .social-icons {
+
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-around;
+
+            align-items: center;
+        }
+
+        .list-unstyled.social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            display: flex;
+        }
+
+        .list-unstyled.social-icons li {
+            margin: 0 10px;
+            height: 20px;
+
+        }
+
+        .quicklinks li {
+            margin: 5px;
+            opacity: 0.7;
+            transition: all 0.2ms;
+        }
+
+        .quicklinks li:hover {
+            opacity: 1;
+            font-weight: 500;
+
+        }
+
+        .phone {
+            color: #ff5a2c;
+            font-family: Poppins Helvetica, sans-serif;
+            /* font-size: 15px; */
+            display: block;
+            margin-top: 4px;
+        }
+
+        footer p {
+
+            font-size: 16px;
+        }
+
+        .address {
+            font-size: 16px;
+            padding-left: 7px;
+        }
+
+        .logo {
+            height: 80px;
+            width: fit-content;
+        }
+
+        footer h5 {
+            margin-top: 20px;
+        }
+
+        /* Facebook */
+        .social-icons .facebook:hover i {
+            color: #1877f2;
+            /* Facebook blue */
+        }
+
+        /* Twitter */
+        .social-icons .twitter:hover i {
+            color: #1DA1F2;
+            /* Twitter blue */
+        }
+
+        /* Instagram */
+        .social-icons .instagram:hover i {
+            color: #E4405F;
+            /* Instagram pink */
+        }
+
+        /* Replace with your Instagram logo image */
+
+
+        /* LinkedIn */
+        .social-icons .linkedin:hover i {
+            color: #0077B5;
+            /* LinkedIn blue */
+        }
+
+        /* YouTube */
+        .social-icons .youtube:hover i {
+            color: #FF0000;
+            /* YouTube red */
+        }
+
+        /* for top button  */
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width: 60px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  rotate: 270deg;
+  border-radius: 50px;
+  text-align: center;
+  padding-left: -10px;
+}
+.shadowmine{
+  box-shadow: 1px 0px 15px grey;
+}
+.purpose-title{
+  font-family: Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight:800 ;
+  margin-bottom: 30px;
+}
+
+/* style for footer ends here  */
 
 /* company logos css */
 /* Company Scroll Bar CSS starts here. */
@@ -266,6 +399,18 @@ body {
 /* Comapny SCroll Bar CSS ends here. */
 
 
+/* media query for display navbars and dropdowns */
+@media screen and (min-width:457px) and (max-width: 556px) {
+    .dept-dropdown-items{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 456px) {
+    .dept-dropdown-items{
+        font-size: 7px;
+    }
+}
+/* something  */
 @media not screen and (min-width:0px) and (max-width:991px) {
     .nav-elements-large {
         display: block !important;
@@ -362,7 +507,7 @@ body {
 /*Small custom navbar*/
 .small-navbar {
     padding: 10px;
-    height: 50px;
+    height: 60px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -379,9 +524,11 @@ i {
 }
 .small-navbar-nav-button {
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid #ffffff88;
     border-radius: 5px;
     padding: 6px;
+    color:#ffffff90;
+    height: fit-content;
 }
 .small-navbar-center-text {
     color: #ffffff;
@@ -525,4 +672,80 @@ i {
 
 .menu-item-card:hover .menu-card-title{
     color: #fff;
+    
+}
+/* animation ends here  */ 
+
+/* new animation starts here  */
+.menu-card-title2 {
+    color:black;
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: BOLD;
+    margin-top: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.menu-item-card2 {
+    height: 300px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item-card2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #b1040e;
+    z-index: 1;
+    transition: height 1s ease;
+}
+
+.menu-item-card2:hover::before {
+    height: 100%;
+}
+
+/* .menu-item-card2:hover .menu-item-image{
+    transition: 2s;
+    transform: scale(1.2);
+    
+} */
+
+.menu-item-card2:hover .menu-card-title2{
+    color: #fff;
+    .menu-card-button{
+        background-color: white;
+        color: #b1040e;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+/* new animation ends here  */
+
+/* image in menu-card adjustment */
+@media screen and (min-width: 768px) and (max-width: 993px){
+   .aicte-card{
+       width: 130px;
+       height: auto;
+       margin-top: 20px;
+   }
+}
+
+/* font-size of placements */
+@media screen and (max-width: 768px) {
+    .count-increase{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 446px) {
+    .count-increase{
+        font-size: 25px;
+        
+    }
 }

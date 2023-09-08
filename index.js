@@ -138,8 +138,33 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    
   } else {
     mybutton.style.display = "none";
+
+    const navbar = document.querySelector('.navbar');
+    const navbar2 = document.querySelector('.navbar-expand-lg');
+    const navbar2ndLarge = document.querySelector('#second-large-navbar');
+    const nav2text = document.getElementById("nav-bar2-text");
+    const nav2text2 = document.getElementById("nav-bar2-text2");
+    const nav2text3= document.getElementById("nav-bar2-text3");
+    const nav2text4 = document.getElementById("nav-bar2-text4");
+    const nav2text5= document.getElementById("nav-bar2-text5");
+    const nav2text6= document.getElementById("nav-bar2-text6");
+    const nav2text7= document.getElementById("nav-bar2-text7");
+    const nav2text8= document.getElementById("nav-bar2-text8");
+    const showDiv = document.querySelector('.placement-content');
+    navbar.style.backgroundColor = 'transparent';
+    navbar2.style.backgroundColor = 'transparent';
+    navbar2ndLarge.style.backgroundColor='transparent';
+    nav2text.style.color="white";
+            nav2text2.style.color="white";
+            nav2text3.style.color="white";
+            nav2text4.style.color="white";
+            nav2text5.style.color="white";
+            nav2text6.style.color="white";
+            nav2text7.style.color="white";
+            nav2text8.style.color="white";
   }
 }
 
