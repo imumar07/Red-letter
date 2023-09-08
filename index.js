@@ -2,7 +2,7 @@ function increaseNumber(targetElement, endValue) {
     let currentNumber = 0;
     const duration = 2300;
     let step = 20;
-    if (endValue === 20) {
+    if (endValue === 22) {
         step = 1;
     }
     const interval = duration / (endValue / step);
@@ -47,7 +47,7 @@ const observer_2 = new IntersectionObserver((entries) => {
             increaseNumber(placement2023Element, 690);
             increaseNumber(facultNumberElement, 500);
             increaseNumber(studentNumberElement, 5000);
-            increaseNumber(experienceNumberElement, 20);
+            increaseNumber(experienceNumberElement, 22);
             observer_2.unobserve(lastStats);
         }
     });
