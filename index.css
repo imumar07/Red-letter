@@ -533,7 +533,8 @@ i {
     border-radius: 5px;
     height: fit-content;
     padding: 6px;
-    color: #ffffff90;
+    color:#ffffff90;
+    height: fit-content;
 }
 .small-navbar-center-text {
     color: #ffffff;
