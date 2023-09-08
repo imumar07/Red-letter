@@ -410,6 +410,11 @@ body {
         font-size: 7px;
     }
 }
+@media screen and (min-width:768px) and (max-width: 834px) {
+    .dept-dropdown-items{
+        font-size: 11px;
+    }
+}
 /* something  */
 @media not screen and (min-width:0px) and (max-width:991px) {
     .nav-elements-large {
@@ -605,7 +610,9 @@ i {
         background-position: center;
     }
 }
-
+.branch-card{
+    transition: all 1s ease;
+}
 /* colour animation for course offered */
 .branch-card:hover {
     .wcu-card-title{
@@ -718,12 +725,7 @@ i {
 
 .menu-item-card2:hover .menu-card-title2{
     color: #fff;
-    .menu-card-button{
-        background-color: white;
-        color: #b1040e;
-        position: relative;
-        z-index: 2;
-    }
+    
 }
 
 /* new animation ends here  */
